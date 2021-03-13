@@ -4,7 +4,7 @@
         const nameResult = document.getElementById('result')
         maleButton.addEventListener('click', function() { getName("male")})
         femaleButton.addEventListener('click', function(){ getName("female")})
-        // https://namey.muffinlabs.com/api.js
+        
         function getName(gender) {
             let options = { count: 1, type: gender, min_freq: 40, max_freq: 60 }
             var callback;
