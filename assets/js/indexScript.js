@@ -1,3 +1,4 @@
+
 var catButton = $("#cat");
 // console.log(catButton);
 var dogButton = $("#dog");
@@ -51,3 +52,9 @@ function search(animaltype, city) {
   
 // kick things off
 getToken();
+
+
+$(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });
+
