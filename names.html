@@ -10,21 +10,43 @@
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
+    
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/names.css"/>
     <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
    </head> 
    <body>
        <main>
             <!--animal they chose-->
-            <div id= "chosen_animal"><h1>Pet:</h1>
-
+            <div class="row">
+              <div class="col s12 m7">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/sample-1.jpg">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
             </div>
             <!--name generator-->
             <div id= "name_generator"><h2><strong>Name Generator:
             </strong></h2>
+            <div class="grid-example col s12 m6"><span class="flow-text">the animal name goes here</span></div>
+            <div id= "button-container">
             <button type = "button" id= "female"><i class="fas fa-female"></i></button>
             <button type = "button" id= "male"><i class="fas fa-male"></i></i></i></button>
             </div>
+            </div>
+          </div>
        </main>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    </body>
 </html>
