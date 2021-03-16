@@ -1,0 +1,46 @@
+body{
+    background-color: royalblue;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-child {
+    display: flex;
+    flex: 1;
+    border: 2px solid black;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+h1 {
+    color: purple;
+}
+
+h2 {
+    color: purple;
+}
+
+/* #animals {
+    float: left;
+    color: purple;
+    padding-left: 50px;
+    padding-top: 50px;
+    height: 50%;
+    border-style: solid;
+}
+#favorite {
+    float: right;
+    padding-right: 250px;
+    padding-top: 50px; 
+    color: purple;
+    /* width: 40% 
+}*/

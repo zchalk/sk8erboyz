@@ -1,11 +1,25 @@
-body{
-    background-color: rgb(14, 13, 1);
+:root {
+    --font-color: rgb(43, 61, 226);
 }
 
-
+body{
+    background-color: rgb(106, 165, 253);
+}
 
 .animal {
     border: none;
     background-color: rgb(43, 61, 226);
 }
 
+#input_text {
+    color: white;
+    width: 33%;
+}
+
+.input-field label {
+    color: rgb(43, 61, 226);
+}
+
+main {
+    margin-top: 100px;
+}
