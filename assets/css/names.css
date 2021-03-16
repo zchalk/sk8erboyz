@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#name_generator{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flow-text {
+    display: inline-block;
+    border-style:solid;
+    
+}
+
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
