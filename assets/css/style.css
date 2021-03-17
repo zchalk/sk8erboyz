@@ -3,12 +3,15 @@
 }
 
 body{
-    background-color: rgb(106, 165, 253);
+    background-image: url("../images/cats-and-dogs.jpeg");
+   
 }
 
 .animal {
     border: none;
-    background-color: rgb(43, 61, 226);
+    /* background-color: rgb(119, 182, 94); */
+    cursor: pointer;
+    background-color: rgb(247, 82, 96);
 }
 
 #input_text {
@@ -22,4 +25,43 @@ body{
 
 main {
     margin-top: 100px;
+}
+
+.row .col.s12 {
+    position: fixed;
+    left: 28%;
+    width: 400px;
+}
+
+#container {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    position: absolute;
+    border-style: solid;
+    background-color: rgb(247, 82, 96);
+    top: 20%;
+    left: 30%;
+}
+
+.input-field {
+    position: absolute;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    top: 60%;
+    left: 30%;
+    width: 200px;
+}
+
+#animal-button {
+    position: absolute;
+    top: 25%;
+    left: 19%;
+    
+}
+
+h1{
+    position:absolute;
+    left: 15%;
 }
