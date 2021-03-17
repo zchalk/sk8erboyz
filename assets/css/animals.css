@@ -1,5 +1,6 @@
 body{
-    background-color: royalblue;
+    background-image: url("../images/cats-and-dogs.jpeg");
+   
 }
 
 .flex-container {
@@ -14,6 +15,8 @@ body{
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+    background-color: rgb(247, 82, 96);
+    ;
 
 }
 
