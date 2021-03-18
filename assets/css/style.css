@@ -4,7 +4,7 @@
 
 body{
     background-image: url("../images/cats-and-dogs.jpeg");
-   margin-bottom: 20rem;
+   
    min-height: 100%;
 }
 
@@ -26,6 +26,7 @@ body{
 
 main {
     margin-top: 100px;
+    margin: 2000px;
 }
 
 .row .col.s12 {
@@ -80,13 +81,13 @@ animals.css
 
 #favorite {
     position: absolute;
-    bottom: 3%;
+    top: 150%;
     left: 60%;
     display: flex;
 }
 
-#animalResults{
-    position:absolute;
-    bottom:3%;
+#animalResults {
+    position: absolute;
+    top: 150%;
     left: 15%;
 }
