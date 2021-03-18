@@ -4,7 +4,8 @@
 
 body{
     background-image: url("../images/cats-and-dogs.jpeg");
-   
+   margin-bottom: 20rem;
+   min-height: 100%;
 }
 
 .animal {
@@ -61,7 +62,31 @@ main {
     
 }
 
-h1{
+
+
+/* 
+
+animals.css 
+
+*/
+
+.flex-child {
+    display: flex;
+    width: 400px;
+    border: 2px solid black;
+    justify-content: center;
+    background-color: rgb(247, 82, 96);
+}
+
+#favorite {
+    position: absolute;
+    bottom: 3%;
+    left: 60%;
+    display: flex;
+}
+
+#animalResults{
     position:absolute;
+    bottom:3%;
     left: 15%;
 }
