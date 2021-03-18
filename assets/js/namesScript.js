@@ -1,7 +1,11 @@
 
-        const maleButton = document.getElementById('male')
-        const femaleButton = document.getElementById('female')
-        const nameResult = document.getElementById('result')
+        var maleButton = $('#male')
+        var femaleButton = $('#female')
+        var nameResult = $('#result')
+
+
+
+
         maleButton.addEventListener('click', function() { getName("male")})
         femaleButton.addEventListener('click', function(){ getName("female")})
         
@@ -10,7 +14,6 @@
             var callback;
             var tmp_params = {};
             var host = "namey.muffinlabs.com";
-            //var host = window.location.host;
             var query;
             if (typeof (options) == "function") {
                 callback = options;
