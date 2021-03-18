@@ -39,6 +39,7 @@ function fetchAnimals(url) {
       console.log(animalArray);
       for (let i = 0; i < animalArray.length; i++) {
 
+
         if (animalArray[i].primary_photo_cropped) {
           var srcImage = animalArray[i].primary_photo_cropped.small
         } else {
@@ -51,6 +52,7 @@ function fetchAnimals(url) {
          var link = animalArray[i].URL;
         // this is gross because it's a materialize card
         $("#animalResults").append("<div class='col s12 m6'><div class='card'><div class='card-image'><img src="+ srcImage + "><span class='card-title'>" + name +"</span><a class='save-btn btn-floating halfway-fab waves-effect waves-light red' data-pos=" + [i] + "><i class='material-icons'>♡</i></a></div><div class='card-content'><p>Gender: " + gender + "<br>" + age + "<br>" + description + "<br><a href='" + link + "'>Learn More</a></p></div></div></div></div>")
+
 
       }
     });
