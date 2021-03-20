@@ -95,3 +95,7 @@ animals.css
     grid-template-columns: repeat(3, 1fr); 
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
