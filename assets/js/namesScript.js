@@ -1,13 +1,14 @@
 
         var maleButton = $('#male')
         var femaleButton = $('#female')
-        var nameResult = $('#result')
+        var nameResult = $('#results')
+        console.log(nameResult);
 
 
 
 
-        maleButton.addEventListener('click', function() { getName("male")})
-        femaleButton.addEventListener('click', function(){ getName("female")})
+        maleButton.on('click', function() { getName("male")})
+        femaleButton.on('click', function(){ getName("female")})
         
         function getName(gender) {
             let options = { count: 1, type: gender, min_freq: 40, max_freq: 60 }
@@ -52,6 +53,7 @@
                 })
                 .then(function (result) {
                     console.log(result)
-                    nameResult.innerHTML = result[0]
+                    nameResult.text(result[0])
                 })
+                
         }
