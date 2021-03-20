@@ -2,10 +2,25 @@
     --font-color: rgb(43, 61, 226);
 }
 
-body{
+body {
     background-image: url("../images/cats-and-dogs.jpeg");
-   
-   min-height: 100%;
+    min-height: 100vh;
+}
+
+#container h1{
+margin: 20px auto;
+}
+
+#container {
+    margin: 20px auto;    /*  HEY RICKY LOOK AT THIS PROPERTY TO CENTER */
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+    border-style: solid;
+    background-color: rgb(247, 82, 96);
+    top: 20%;
+    left: 30%;
 }
 
 .animal {
@@ -24,11 +39,6 @@ body{
     color: rgb(43, 61, 226);
 }
 
-main {
-    margin-top: 100px;
-    margin: 2000px;
-}
-
 .row .col.s12 {
     position: fixed;
     left: 28%;
@@ -40,15 +50,21 @@ main {
     width: 500px;
     height: 500px;
     flex-direction: column;
-    position: absolute;
     border-style: solid;
     background-color: rgb(247, 82, 96);
-    top: 20%;
-    left: 30%;
 }
 
+.lower-container {
+    display: flex;
+    justify-content: center;
+    margin: 500px auto;
+}
+
+.lower-container > * {
+  margin: 10px;
+} 
+
 .input-field {
-    position: absolute;
     margin-top: 1rem;
     margin-bottom: 1rem;
     top: 60%;
@@ -57,37 +73,25 @@ main {
 }
 
 #animal-button {
-    position: absolute;
-    top: 25%;
-    left: 19%;
+    margin: 30px auto ;
     
 }
-
-
-
 /* 
-
 animals.css 
-
 */
-
 .flex-child {
-    display: flex;
     width: 400px;
     border: 2px solid black;
     justify-content: center;
-    background-color: rgb(247, 82, 96);
+    background-color: rgb(106, 233, 216);
 }
 
 #favorite {
-    position: absolute;
-    top: 150%;
-    left: 60%;
     display: flex;
 }
 
-#animalResults {
-    position: absolute;
-    top: 150%;
-    left: 15%;
+#animalResult {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+
 }
