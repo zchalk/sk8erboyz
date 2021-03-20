@@ -1,4 +1,5 @@
 # Project 1- Group 1
+Ricardo Flores, Stephanie Barnhouse, Zoe Chalk
 
 ## Endless Pawsabilities
 
@@ -8,7 +9,7 @@ This application was created using HTML, CSS, Materialize, Javascript, jQuery, F
 
 zchalk.github.io/sk8erboyz/
 
-![endless_pawsabilities](https://user-images.githubusercontent.com/77131387/111552629-1fc86d00-8759-11eb-8cff-2384cec9fa61.png)
+![enless_pawsabilities](https://user-images.githubusercontent.com/77131387/111873898-0ac22880-8969-11eb-8449-0e5e619ef4c9.png)
 
 
 ## User Story

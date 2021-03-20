@@ -34,6 +34,9 @@ margin: 20px auto;
     color: white;
     width: 33%;
 }
+i {
+    font-style: normal ;
+}
 
 .input-field label {
     color: rgb(43, 61, 226);
