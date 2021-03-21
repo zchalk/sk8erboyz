@@ -1,14 +1,38 @@
 
-        var maleButton = $('#male')
-        var femaleButton = $('#female')
-        var nameResult = $('#results')
-        console.log(nameResult);
+var maleButton = $('#male')
+var femaleButton = $('#female')
+var nameResult = $('#results')
+var theOne = JSON.parse(localStorage.getItem("theOne"));
+console.log(theOne);
 
 
 
 
-        maleButton.on('click', function() { getName("male")})
-        femaleButton.on('click', function(){ getName("female")})
+maleButton.on('click', function() { getName("male")});
+femaleButton.on('click', function(){ getName("female")});
+
+        function checkStorage() {
+            if (theOne) {
+              for (let i = 0; i < theOne.length; i++) {
+          
+                if (theOne[i].primary_photo_cropped) {
+                  var srcImage = theOne[i].primary_photo_cropped.small
+                } else {
+                  var srcImage = 'https://sanfrancisco.cbslocal.com/wp-content/uploads/sites/15116056/2011/10/pets.jpg?w=420'
+                }
+                 var name = theOne[i].name;
+                 var gender = theOne[i].gender;
+                 var description = theOne[i].description;
+                 var age = theOne[i].age;
+                 var link = theOne[i].URL;
+                 var position = theOne[i].position;
+                // this is gross because it's a materialize card
+                $("#theOneContainer").append("<div class='col s12 m6'><div class='card'><div class='card-image'><img src="+ srcImage + "><span class='card-title'>" + name +"</span><a href= '" + link + "'class='lock-btn btn-floating halfway-fab waves-effect waves-light red' data-pos=" + position + "><i class='material-icons'>🏠</i></a></div><div class='card-content'><p>Gender: " + gender + "<br>" + age + "<br>" + description + "<br><a href='" + link + "'>Learn More</a></p></div></div></div></div>")
+              };
+            };
+          };
+
+
         
         function getName(gender) {
             let options = { count: 1, type: gender, min_freq: 40, max_freq: 60 }
@@ -56,4 +80,6 @@
                     nameResult.text(result[0])
                 })
                 
-        }
+        };
+
+        checkStorage();
