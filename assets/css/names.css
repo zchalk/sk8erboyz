@@ -2,7 +2,9 @@ main {
     display: flex;
     flex-direction: row;
 }
-
+i {
+    font-style: normal ;
+}
 #name_generator{
     display: flex;
     flex-direction: column;
@@ -11,14 +13,12 @@ main {
     top: 20%;
     border-style:solid ;
     width: 400px;
-    height: 500px;
+    height: 400px;
     background-color: rgb(247, 82, 96);
 }
 
 #name_generator h2 {
-    font-size: 50px;
-    position: absolute;
-    left: 7%;
+    text-align: center;
 }
 
 .flow-text {
@@ -37,7 +37,7 @@ main {
     font-size: 60px;
 }
 
-.row .col.m7 {
+#theOneContainer {
     width: 30%;
     margin-left: auto;
     right: auto;
@@ -48,7 +48,7 @@ main {
 
 .grid-example.col.s12.m6 {
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 15%;
 }
 
