@@ -38,12 +38,12 @@ i {
 }
 
 #theOneContainer {
-    width: 30%;
+    width: 350px;
     margin-left: auto;
     right: auto;
     position: fixed;
     left: 15%;
-    top: 20%;
+    top: 7%;
 }
 
 .grid-example.col.s12.m6 {
