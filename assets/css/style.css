@@ -1,52 +1,50 @@
 :root {
-    --font-color: rgb(43, 61, 226);
+    --accentColor: rgb(247, 82, 96);
 }
-
 body {
     background-image: url("../images/cats-and-dogs.jpeg");
     min-height: 100vh;
 }
-
-#container h1{
-margin: 20px auto;
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
 }
 
 #container {
-    margin: 20px auto;    /*  HEY RICKY LOOK AT THIS PROPERTY TO CENTER */
+    margin: 20px auto; 
     display: flex;
     width: 500px;
     height: 500px;
     flex-direction: column;
     border-style: solid;
-    background-color: rgb(247, 82, 96);
-    top: 20%;
-    left: 30%;
+    background-color: var(--accentColor);
 }
 
 .animal {
     border: none;
-    /* background-color: rgb(119, 182, 94); */
     cursor: pointer;
-    background-color: rgb(247, 82, 96);
+    background-color:var(--accentColor);
+}
+#startOver {
+    cursor: pointer;
+    width:200px;
+    align-self: center;
+    background-color: var(--accentColor);
+}
+#startOver:hover {
+    filter:brightness(110%);
+    box-shadow: -0.2rem 0.225rem 0.7rem 0 #e088aa;
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
 }
 
-#input_text {
-    color: white;
-    width: 33%;
-}
+
 i {
     font-style: normal ;
 }
 
-.input-field label {
-    color: rgb(43, 61, 226);
-}
-
-.row .col.s12 {
-    position: fixed;
-    left: 28%;
-    width: 400px;
-}
 
 #container {
     display: flex;
@@ -68,9 +66,6 @@ i {
 } 
 
 .input-field {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    top: 60%;
     left: 30%;
     width: 200px;
 }
@@ -79,9 +74,7 @@ i {
     margin: 30px auto ;
     
 }
-/* 
-animals.css 
-*/
+
 .flex-child {
     width: 400px;
     border: 2px solid black;
@@ -91,7 +84,6 @@ animals.css
 
 
 #animalResults {
-
     margin: 10px;
 }
 
@@ -100,8 +92,5 @@ html {
 }
 
 #favorite{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    margin: 0px 10px;
-
+    margin: 10px;
 }
