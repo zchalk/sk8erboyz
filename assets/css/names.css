@@ -47,9 +47,8 @@ i {
 }
 
 .grid-example.col.s12.m6 {
-    position: absolute;
-    top: 45%;
-    left: 15%;
+    margin: 60px;
+    text-align: center;
 }
 
 body{

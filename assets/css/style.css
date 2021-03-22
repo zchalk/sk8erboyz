@@ -89,16 +89,19 @@ animals.css
     background-color: rgb(106, 233, 216);
 }
 
-#favorite {
-    display: flex;
-}
 
-#animalResult {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+#animalResults {
 
+    margin: 10px;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+#favorite{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    margin: 0px 10px;
+
 }
